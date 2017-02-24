@@ -8,20 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		E79415F61E5FEBCE004303A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79415F51E5FEBCE004303A6 /* AppDelegate.swift */; };
-		E79415F81E5FEBCE004303A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79415F71E5FEBCE004303A6 /* ViewController.swift */; };
 		E79415FB1E5FEBCE004303A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E79415F91E5FEBCE004303A6 /* Main.storyboard */; };
 		E79415FD1E5FEBCE004303A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E79415FC1E5FEBCE004303A6 /* Assets.xcassets */; };
 		E79416001E5FEBCE004303A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E79415FE1E5FEBCE004303A6 /* LaunchScreen.storyboard */; };
+		E79416081E5FF103004303A6 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79416071E5FF103004303A6 /* TableViewController.swift */; };
+		E794160A1E5FF158004303A6 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79416091E5FF158004303A6 /* AddViewController.swift */; };
+		E794160C1E5FF171004303A6 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E794160B1E5FF171004303A6 /* DetailViewController.swift */; };
+		E79416101E5FF3B1004303A6 /* cart.png in Resources */ = {isa = PBXBuildFile; fileRef = E794160D1E5FF3B1004303A6 /* cart.png */; };
+		E79416111E5FF3B1004303A6 /* clock.png in Resources */ = {isa = PBXBuildFile; fileRef = E794160E1E5FF3B1004303A6 /* clock.png */; };
+		E79416121E5FF3B1004303A6 /* pencil.png in Resources */ = {isa = PBXBuildFile; fileRef = E794160F1E5FF3B1004303A6 /* pencil.png */; };
+		E79416141E60036A004303A6 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = E79416131E60036A004303A6 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E79415F21E5FEBCE004303A6 /* Table.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Table.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E79415F51E5FEBCE004303A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E79415F71E5FEBCE004303A6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E79415FA1E5FEBCE004303A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E79415FC1E5FEBCE004303A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E79415FF1E5FEBCE004303A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E79416011E5FEBCE004303A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E79416071E5FF103004303A6 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		E79416091E5FF158004303A6 /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		E794160B1E5FF171004303A6 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		E794160D1E5FF3B1004303A6 /* cart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cart.png; sourceTree = "<group>"; };
+		E794160E1E5FF3B1004303A6 /* clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock.png; sourceTree = "<group>"; };
+		E794160F1E5FF3B1004303A6 /* pencil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pencil.png; sourceTree = "<group>"; };
+		E79416131E60036A004303A6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +50,7 @@
 		E79415E91E5FEBCE004303A6 = {
 			isa = PBXGroup;
 			children = (
+				E79416131E60036A004303A6 /* README.md */,
 				E79415F41E5FEBCE004303A6 /* Table */,
 				E79415F31E5FEBCE004303A6 /* Products */,
 			);
@@ -54,12 +67,17 @@
 		E79415F41E5FEBCE004303A6 /* Table */ = {
 			isa = PBXGroup;
 			children = (
+				E794160D1E5FF3B1004303A6 /* cart.png */,
+				E794160E1E5FF3B1004303A6 /* clock.png */,
+				E794160F1E5FF3B1004303A6 /* pencil.png */,
 				E79415F51E5FEBCE004303A6 /* AppDelegate.swift */,
-				E79415F71E5FEBCE004303A6 /* ViewController.swift */,
 				E79415F91E5FEBCE004303A6 /* Main.storyboard */,
 				E79415FC1E5FEBCE004303A6 /* Assets.xcassets */,
 				E79415FE1E5FEBCE004303A6 /* LaunchScreen.storyboard */,
 				E79416011E5FEBCE004303A6 /* Info.plist */,
+				E79416071E5FF103004303A6 /* TableViewController.swift */,
+				E79416091E5FF158004303A6 /* AddViewController.swift */,
+				E794160B1E5FF171004303A6 /* DetailViewController.swift */,
 			);
 			path = Table;
 			sourceTree = "<group>";
@@ -124,7 +142,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E79416121E5FF3B1004303A6 /* pencil.png in Resources */,
 				E79416001E5FEBCE004303A6 /* LaunchScreen.storyboard in Resources */,
+				E79416111E5FF3B1004303A6 /* clock.png in Resources */,
+				E79416101E5FF3B1004303A6 /* cart.png in Resources */,
 				E79415FD1E5FEBCE004303A6 /* Assets.xcassets in Resources */,
 				E79415FB1E5FEBCE004303A6 /* Main.storyboard in Resources */,
 			);
@@ -137,8 +158,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E79415F81E5FEBCE004303A6 /* ViewController.swift in Sources */,
 				E79415F61E5FEBCE004303A6 /* AppDelegate.swift in Sources */,
+				E79416081E5FF103004303A6 /* TableViewController.swift in Sources */,
+				E79416141E60036A004303A6 /* README.md in Sources */,
+				E794160A1E5FF158004303A6 /* AddViewController.swift in Sources */,
+				E794160C1E5FF171004303A6 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
