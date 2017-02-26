@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oRh-9H-ujU" id="Log-Vr-7Kn">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
@@ -63,14 +63,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nWc-AI-btN">
-                                <rect key="frame" x="16" y="137" width="288" height="30"/>
+                                <rect key="frame" x="16" y="203" width="288" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KnK-jT-FdR">
-                                <rect key="frame" x="137" y="186" width="46" height="30"/>
+                                <rect key="frame" x="137" y="241" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Add">
                                     <color key="titleColor" red="0.83118523492711682" green="0.52894378954335008" blue="0.88024206606217614" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -79,10 +79,23 @@
                                     <action selector="btnAddItem:" destination="jQ8-cs-tuz" eventType="touchUpInside" id="CfA-SX-2WL"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WYK-vV-fbL">
+                                <rect key="frame" x="63" y="120" width="42" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="74B-dx-N9o">
+                                <rect key="frame" x="156" y="97" width="107" height="84"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="jQ8-cs-tuz" id="eZq-oD-QvK"/>
+                                </connections>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="imageView" destination="WYK-vV-fbL" id="aBj-bs-MKM"/>
+                        <outlet property="pickerImage" destination="74B-dx-N9o" id="PeE-RS-SeZ"/>
                         <outlet property="tfAddItem" destination="nWc-AI-btN" id="lot-dO-gxK"/>
                     </connections>
                 </viewController>
@@ -123,7 +136,6 @@
         <!--Navigation Controller-->
         <scene sceneID="EqT-Ka-1gS">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CwA-fw-7Zc" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bvM-Vc-Dv4" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="gb4-ru-otQ">
@@ -135,6 +147,7 @@
                         <segue destination="FdJ-uR-ILQ" kind="relationship" relationship="rootViewController" id="yeV-9c-Z1g"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CwA-fw-7Zc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-174" y="38"/>
         </scene>
